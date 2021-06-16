@@ -1,0 +1,18 @@
+
+Instructions on how to install your app on other tags using a floppy
+
+* Copy the viral directory to the root of your badge
+* Copy the contents of your app to the viral directory at the root of your badge
+* Edit the main.py file in the viral and change the names to apply to your app
+
+What's going on:
+
+* If there is a viral directory on the root of your badge, the contents will be copied to the floppy automatically
+* If there is a main.py on the root of a new floppy, it will be run when the floppy is mounted
+* We created a viral directory that has a main.py and the contents of your app. 
+* The main.py + app contents are copied to the floppy when it is mounted
+* When someone else mounts the floppy, the main.py will be run and will copy the contents to the apps directory on the other badge
+
+Important to know:
+
+* You can't write TO the badge, if it is connected to your computer, because the filesystem lock is on.
